@@ -1,7 +1,8 @@
 # Containers:
-    When you have a web server, database, messaging and orchestration on separate systems (EC2 instances) it's difficult to have these component communicate with eachother. Each component has its own dependency version, os, libraries and you run into compatibility issues.
 
-    It's also difficult for developers to get a local environment set up.
+When you have a web server, database, messaging and orchestration on separate systems (EC2 instances) it's difficult to have these component communicate with eachother. Each component has its own dependency version, os, libraries and you run into compatibility issues.
+
+It's also difficult for developers to get a local environment set up.
 
 ### Difference between Virtual Machines and Docker Containers
 * VM: has it's own operating system, using a hypervisor and is completely isolated. 
