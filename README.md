@@ -24,4 +24,8 @@ Examples on how to create simple pod definition yaml files and execute configura
 
 ## YAML
 
+Examples of YAML syntax
+
 ## Controllers
+
+A brief explanation and example on how to set up replication utilizing kubernetes controllers.
