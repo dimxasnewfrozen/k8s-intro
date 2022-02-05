@@ -15,6 +15,9 @@ A brief explanation on Container Orchestration as it related to Kubernetes
 A brief explanation on the architecture of Kubernetes and all of the various components
 
 ## Setting up Local Environment
+
+How to run minikube, kubectl and interact with your local environment by creating a deployment and service
+
 ## Pods
 ## YAML
 ## Controllers
