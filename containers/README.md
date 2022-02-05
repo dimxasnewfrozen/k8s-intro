@@ -10,7 +10,7 @@ It's also difficult for developers to get a local environment set up.
 
 ### Docker Image
 
-A packaged template plan for creating the container
+A packaged template plan for creating the container or containers.
 
 ### Basic Docker Usage
 
