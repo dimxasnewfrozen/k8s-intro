@@ -1,6 +1,6 @@
 # Containers:
 
-When you have a web server, database, messaging and orchestration on separate systems (EC2 instances) it's difficult to have these component communicate with eachother. Each component has its own dependency version, os, libraries and you run into compatibility issues.
+When you have a web server, database, messaging and orchestration on separate systems (EC2 instances) it's difficult to have these components communicate with each other. Each component has its own dependency version, os, libraries and you run into compatibility issues.
 
 It's also difficult for developers to get a local environment set up.
 
