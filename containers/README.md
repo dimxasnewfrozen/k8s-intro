@@ -1,16 +1,20 @@
-containers:
-    docker
-        web server, database, messaging, orchestration
-        the matrix from hell: different components requiring different dependency versions
-        compatibility issues
-        os/library/depdencies
-        new developers requiring lots of setup and configuration time running many commands
-    completely isolated environments
-        like a vm but share the same OS kernal
-    high level tool
-    common linux kernal: same for centos, ubuntu etc
-    difference with virtual machine: each vm has it's own OS using a hypervisor and completely isolated. docker can run the containers (lightweight) using the same OS kernal
-    docker run ansible - run an instance of ansible on the docker host
-    docker run nodejs x 3 -- have load balancer in front
-    docker image: package template plan -- can create multiple containers
+# Containers:
+    When you have a web server, database, messaging and orchestration on separate systems (EC2 instances) it's difficult to have these component communicate with eachother. Each component has its own dependency version, os, libraries and you run into compatibility issues.
 
+    It's also difficult for developers to get a local environment set up.
+
+### Difference between Virtual Machines and Docker Containers
+* VM: has it's own operating system, using a hypervisor and is completely isolated. 
+* Container: shares the same OS kernal (centos, ubuntu, etc) on the docker host, much more lightweight. 
+
+### Docker Image
+
+A packaged template plan for creating the container
+
+### Basic Docker Usage
+
+Run an instance of ansible on the docker host.
+
+```bash
+$ docker run ansible
+```
