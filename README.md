@@ -19,5 +19,9 @@ A brief explanation on the architecture of Kubernetes and all of the various com
 How to run minikube, kubectl and interact with your local environment by creating a deployment and service
 
 ## Pods
+
+Examples on how to create simple pod definition yaml files and execute configuration files.
+
 ## YAML
+
 ## Controllers
