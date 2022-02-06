@@ -37,3 +37,7 @@ A brief explanation on how to configure deployments, a new k8s components on top
 ## Rollouts and Versioning
 
 A bried explanation and commands on how to deal with rollouts and versioning.
+
+## Networking
+
+A bried explanation on kubernetes networking
