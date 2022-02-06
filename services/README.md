@@ -50,3 +50,11 @@ kubectl get services
 When a request is made the service finds a pod with the label to forward to. It uses a random algorithm in selecting the pod. 
 
 If the pods are distributed between different nodes, creating the service automatically spans across all nodes in the cluster. 
+
+### Note:
+When running this in minikube, you won't be able to access the service directly since it's running inside of minikube.
+
+```bash
+# get the locally accessible url. This will route minikube to the service node and pod. 
+minikube service --url myapp-service
+```
