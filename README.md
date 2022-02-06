@@ -40,4 +40,8 @@ A bried explanation and commands on how to deal with rollouts and versioning.
 
 ## Networking
 
-A bried explanation on kubernetes networking
+A brief explanation on kubernetes networking
+
+## Services
+
+A brief explanation on different kubernetes services and how to access internal pods using nodeport.
