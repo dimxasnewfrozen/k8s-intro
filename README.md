@@ -32,4 +32,8 @@ A brief explanation and example on how to set up replication utilizing kubernete
 
 ## Deployments
 
-A brief explanation on how to configure deployments, a new k8s components on top of replicasets
+A brief explanation on how to configure deployments, a new k8s components on top of replicasets.
+
+## Rollouts and Versioning
+
+A bried explanation and commands on how to deal with rollouts and versioning.
