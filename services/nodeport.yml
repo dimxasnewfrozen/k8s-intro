@@ -5,10 +5,10 @@ metadata:
 spec:
   type: NodePort
   ports: 
-    - targetPort: 80
-      port: 80
+    - port: 80
+      targetPort: 80
       # If nodeport is not defined, one will be automatically assigned within the range
       nodePort: 30008
   selector:
-    app: myapp
+    app: nginx
     type: front-end

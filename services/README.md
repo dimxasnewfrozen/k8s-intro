@@ -21,15 +21,13 @@ How to make a frontend application available to end users?
 Options: 
 * can ssh into 192.168.1.2 and access the internal pod network or curl the webapp (not ideal)
 
-
 ### Types of services
 
 node-port service: listen to a port on the node to forward requests to the pods.
 
-cluster-ip: a service creates a virtual ip to front end server to BE servers. 
+clusterip: a service creates a virtual ip to front end server to BE servers. 
 
 load balancer: distribute load between services
-
 
 ### Node-port
 
@@ -58,3 +56,24 @@ When running this in minikube, you won't be able to access the service directly 
 # get the locally accessible url. This will route minikube to the service node and pod. 
 minikube service --url myapp-service
 ```
+
+### ClusterIP
+
+Multiple pods for each: frontend, backend, database
+
+The frontend needs to communicate to backend, backened needs to communicate to database.
+
+Connectivity between services? pods all have an ip address. Not static, cannot rely on IP.
+
+A ClusterIP services manages the communication between services. 
+
+### Load Balancer
+
+Multiple nodes in the cluster have their own IP. You can access any of the IPs in the cluster. 
+
+Users need a single IP or URL to access your application. 
+
+You'd generally use a new VM with nginx to handle the load balancing.
+
+But using a cloud provider you can utilize their native load balancer.
+
