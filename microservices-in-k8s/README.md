@@ -32,7 +32,26 @@ minikube service voting-service --url
 
 These are all of the files used to create individual pods and services
 
+Challenges: 
+* doesn't help scale easily if we want to add new instances
+* update with a new image: may require downtime
+
 ### deployments (option 2)
 
 These are all of the files used to create the pods and services using deployments
+
+Deployments automatically create ReplicaSets
+* rolling updates
+* rollback
+* cause of change
+
+```bash
+# if you want to scale a deployment but not update the configuration
+kubectl scale deployment voting-app-deploy --replicas=3
+
+# see that it scaled
+kubectl get deployments voting-app-deploy
+```
+
+
 
