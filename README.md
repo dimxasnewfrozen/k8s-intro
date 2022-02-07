@@ -45,3 +45,7 @@ A brief explanation on kubernetes networking
 ## Services
 
 A brief explanation on different kubernetes services and how to access internal pods using nodeport.
+
+## Microservices and Microservice Deployments in K8s
+
+## Cloud Deployments
